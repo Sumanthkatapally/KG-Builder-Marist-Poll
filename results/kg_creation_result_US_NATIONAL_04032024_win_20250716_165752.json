@@ -1,0 +1,119 @@
+{
+  "survey_name": "US_NATIONAL_04032024",
+  "creation_timestamp": "2025-07-16T16:57:52.819887",
+  "success": true,
+  "platform": "windows",
+  "input_files": {
+    "survey_ontology_path": "D:/MARIST/Research/Environment/myenv/Project/Ontology_App/data/survey/National/04032024/Ontology/survey_ontology.py",
+    "survey_data_path": "D:/MARIST/Research/Environment/myenv/Project/Ontology_App/data/survey/National/04032024/SurveyDictionary/survey_data.csv"
+  },
+  "docker_instance": {
+    "instance_id": "neo4j_kg_20250716_165406_0905aa37",
+    "container_name": "neo4j-kg-us-national-04032024-0905aa37",
+    "http_port": 7474,
+    "bolt_port": 7687,
+    "database_name": "neo4j",
+    "volume_name": "neo4j_data_neo4j_kg_20250716_165406_0905aa37",
+    "status": "ready",
+    "container_status": "running",
+    "container_info": {
+      "created": "2025-07-16T20:54:06.978301485Z",
+      "image": "neo4j:community",
+      "platform": "linux"
+    },
+    "neo4j_browser_url": "http://localhost:7474",
+    "bolt_connection": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": "kg_us_national_04032024",
+    "platform": "windows"
+  },
+  "knowledge_graph_statistics": {
+    "total_entities": 9256,
+    "total_relationships": 7824,
+    "entity_type_counts": {
+      "Respondent": 1305,
+      "TechnicalSurveyMetadata": 1305,
+      "Demographics": 1305,
+      "PublicPolicyCivicEngagement": 1305,
+      "PoliticalOpinions": 1305,
+      "LifestyleAndBehavioralOpinions": 1305,
+      "ValuesAndSocialIssues": 1299,
+      "Question": 127
+    },
+    "relationship_type_counts": {
+      "HAS_METADATA": 1305,
+      "HAS_DEMOGRAPHIC": 1305,
+      "HAS_PUBLIC_POLICY": 1305,
+      "HAS_POLITICAL_OPINION": 1305,
+      "HAS_LIFESTYLE_BEHAVIOR": 1305,
+      "HAS_VALUES_SOCIAL_ISSUES": 1299
+    },
+    "entities_with_text_content": 9256,
+    "text_content_percentage": 100.0,
+    "ontology_summary": {
+      "total_categories": 6,
+      "total_fields": 177,
+      "categories": {
+        "HAS_METADATA": 10,
+        "HAS_DEMOGRAPHIC": 91,
+        "HAS_PUBLIC_POLICY": 5,
+        "HAS_POLITICAL_OPINION": 40,
+        "HAS_LIFESTYLE_BEHAVIOR": 5,
+        "HAS_VALUES_SOCIAL_ISSUES": 26
+      },
+      "entity_types": [
+        "Respondent",
+        "PoliticalOpinions",
+        "PublicPolicyCivicEngagement",
+        "ValuesAndSocialIssues",
+        "Demographics",
+        "LifestyleAndBehavioralOpinions",
+        "TechnicalSurveyMetadata"
+      ]
+    }
+  },
+  "neo4j_statistics": {
+    "node_counts": {
+      "Respondent": 1305,
+      "Survey": 0,
+      "PoliticalOpinions": 1305,
+      "Question": 127,
+      "LifestyleAndBehavioralOpinions": 1305,
+      "TechnicalSurveyMetadata": 1305,
+      "ValuesAndSocialIssues": 1299,
+      "Demographics": 1305,
+      "PublicPolicyCivicEngagement": 1305
+    },
+    "relationship_counts": {
+      "HAS_METADATA": 1305,
+      "HAS_DEMOGRAPHIC": 1305,
+      "HAS_PUBLIC_POLICY": 1305,
+      "HAS_POLITICAL_OPINION": 1305,
+      "HAS_LIFESTYLE_BEHAVIOR": 1305,
+      "HAS_VALUES_SOCIAL_ISSUES": 1299
+    },
+    "total_nodes": 9256,
+    "total_relationships": 7824,
+    "data_quality": {
+      "nodes_with_text_content": 9256,
+      "orphaned_nodes": 127,
+      "respondent_coverage": {
+        "total": 1305,
+        "connected_entities": 7824
+      }
+    }
+  },
+  "platform_info": {
+    "host_platform": "windows"
+  },
+  "connection_scripts": {
+    "batch": "connection_scripts\\connect_neo4j_kg_us_national_04032024_0905aa37.bat",
+    "powershell": "connection_scripts\\connect_neo4j_kg_us_national_04032024_0905aa37.ps1"
+  },
+  "access_instructions": {
+    "neo4j_browser": "http://localhost:7474",
+    "bolt_connection": "bolt://localhost:7687",
+    "username": "neo4j",
+    "password": "kg_us_national_04032024"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "package_name": "neo4j-knowledge-graph-builder",
+  "version": "1.0.0",
+  "created_on_platform": "windows",
+  "supported_platforms": [
+    "windows",
+    "linux"
+  ],
+  "windows_scripts": {
+    "setup_bat": "deployment\\windows\\setup.bat",
+    "run_bat": "deployment\\windows\\run_kg_builder.bat",
+    "setup_ps1": "deployment\\windows\\setup.ps1",
+    "run_ps1": "deployment\\windows\\run_kg_builder.ps1",
+    "requirements": "deployment\\windows\\requirements.txt",
+    "readme": "deployment\\windows\\README.md"
+  },
+  "linux_scripts": {
+    "setup_sh": "deployment\\linux\\setup.sh",
+    "run_sh": "deployment\\linux\\run_kg_builder.sh",
+    "docker_compose_sh": "deployment\\linux\\docker_compose_setup.sh",
+    "requirements": "deployment\\linux\\requirements.txt",
+    "readme": "deployment\\linux\\README.md"
+  },
+  "main_readme": "deployment\\README.md",
+  "requirements": {
+    "python_version": "3.8+",
+    "docker_required": true,
+    "memory_recommended": "4GB+",
+    "disk_space": "10GB+"
+  }
+}

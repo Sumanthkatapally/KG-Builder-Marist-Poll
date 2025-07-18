@@ -1,0 +1,33 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment
+myenv/
+.env
+
+# Logs
+*.logs
+
+# VS Code
+.vscode/
+
+# Backup or temporary files
+backup/
+*.bak
+*~
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+.data/
+
+.deployment/
+
+.models/
+
+.results/
+
+.connection_scripts/

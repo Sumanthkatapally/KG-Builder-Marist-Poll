@@ -1,0 +1,576 @@
+2025-07-16 16:54:06,513 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 16:54:06,514 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 16:54:06,514 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 16:54:06,733 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:54:06,733 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 16:54:06,781 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 16:54:06,861 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:54:06,861 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:54:06,861 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 16:54:06,941 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-0905aa37
+2025-07-16 16:54:06,942 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 16:54:06,942 - cross_platform_docker_manager - INFO -   HTTP Port: 7474
+2025-07-16 16:54:06,942 - cross_platform_docker_manager - INFO -   Bolt Port: 7687
+2025-07-16 16:54:06,942 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_165406_0905aa37
+2025-07-16 16:54:07,463 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-0905aa37 created successfully
+2025-07-16 16:54:07,463 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-0905aa37 to be ready...
+2025-07-16 16:54:07,476 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:54:08,029 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
+Connection to 127.0.0.1:7687 closed with incomplete handshake response
+2025-07-16 16:54:08,030 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 16:54:13,042 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:54:13,078 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
+Connection to 127.0.0.1:7687 closed with incomplete handshake response
+2025-07-16 16:54:13,078 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 16:54:18,087 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:54:18,115 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7687, 0, 0)) (deadline Deadline(timeout=60.0))
+Connection to 127.0.0.1:7687 closed with incomplete handshake response
+2025-07-16 16:54:18,115 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 16:54:23,125 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:54:24,730 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 16:54:24,742 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 16:54:24,742 - cross_platform_docker_manager - INFO - [OK] neo4j-kg-us-national-04032024-0905aa37 is ready!
+2025-07-16 16:54:24,742 - cross_platform_docker_manager - INFO - Building knowledge graph from CSV data with external ontology...
+2025-07-16 16:54:24,790 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:54:24,842 - kg_builder - INFO - Loaded 1305 respondents from CSV: D:/MARIST/Research/Environment/myenv/Project/Ontology_App/data/survey/National/04032024/SurveyDictionary/survey_data.csv
+2025-07-16 16:54:24,844 - kg_builder - INFO - Known fields: 127
+2025-07-16 16:54:24,844 - kg_builder - INFO - Unknown fields: 50
+2025-07-16 16:54:24,844 - kg_builder - WARNING - Unknown fields found: ['wtfactor', 'RecordNo', 'CaseId', 'LastConnectionDate', 'raceCMB', 'raceT', 'racewtl', 'racewtl2', 'racewtl3', 'racewtl4']...
+2025-07-16 16:54:24,844 - kg_builder - WARNING - Expected fields missing: ['wtfactor', 'increc75', 'women', 'racewtl2', 'age65X', 'totind', 'LastConnectionDate', 'CaseId', 'latino', 'totalsmp']...
+2025-07-16 16:54:24,844 - kg_builder - INFO - Extracting respondent entities...
+2025-07-16 16:54:24,924 - kg_builder - INFO - Extracting response category entities...
+2025-07-16 16:54:26,413 - kg_builder - INFO - Extracting question entities...
+2025-07-16 16:54:26,463 - kg_builder - INFO - Extracting survey metadata...
+2025-07-16 16:54:26,466 - kg_builder - INFO - Built knowledge graph with 9256 entities and 7824 relationships
+2025-07-16 16:54:26,471 - cross_platform_docker_manager - INFO - [OK] Knowledge graph built: 9256 entities, 7824 relationships
+2025-07-16 16:54:26,472 - cross_platform_docker_manager - INFO - Loading knowledge graph into Neo4j...
+2025-07-16 16:54:26,540 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 16:54:27,265 - neo4j_graph_builder - INFO - Database cleared successfully
+2025-07-16 16:54:27,265 - neo4j_graph_builder - INFO - Starting Neo4j graph construction...
+2025-07-16 16:54:27,268 - neo4j_graph_builder - INFO - Creating basic constraints and indexes...
+2025-07-16 16:54:27,745 - neo4j_graph_builder - INFO - Creating dynamic indexes based on entity types...
+2025-07-16 16:54:28,402 - neo4j_graph_builder - INFO - Creating 9256 entities...
+2025-07-16 16:54:28,402 - neo4j_graph_builder - INFO - Creating 9256 entities in batches of 100
+2025-07-16 16:54:29,129 - neo4j_graph_builder - INFO - Created entity batch 1 (100 entities)
+2025-07-16 16:54:29,243 - neo4j_graph_builder - INFO - Created entity batch 2 (100 entities)
+2025-07-16 16:54:29,380 - neo4j_graph_builder - INFO - Created entity batch 3 (100 entities)
+2025-07-16 16:54:29,452 - neo4j_graph_builder - INFO - Created entity batch 4 (100 entities)
+2025-07-16 16:54:29,555 - neo4j_graph_builder - INFO - Created entity batch 5 (100 entities)
+2025-07-16 16:54:29,670 - neo4j_graph_builder - INFO - Created entity batch 6 (100 entities)
+2025-07-16 16:54:29,766 - neo4j_graph_builder - INFO - Created entity batch 7 (100 entities)
+2025-07-16 16:54:29,864 - neo4j_graph_builder - INFO - Created entity batch 8 (100 entities)
+2025-07-16 16:54:29,960 - neo4j_graph_builder - INFO - Created entity batch 9 (100 entities)
+2025-07-16 16:54:30,035 - neo4j_graph_builder - INFO - Created entity batch 10 (100 entities)
+2025-07-16 16:54:30,132 - neo4j_graph_builder - INFO - Created entity batch 11 (100 entities)
+2025-07-16 16:54:30,214 - neo4j_graph_builder - INFO - Created entity batch 12 (100 entities)
+2025-07-16 16:54:30,299 - neo4j_graph_builder - INFO - Created entity batch 13 (100 entities)
+2025-07-16 16:54:31,048 - neo4j_graph_builder - INFO - Created entity batch 14 (100 entities)
+2025-07-16 16:54:31,335 - neo4j_graph_builder - INFO - Created entity batch 15 (100 entities)
+2025-07-16 16:54:31,660 - neo4j_graph_builder - INFO - Created entity batch 16 (100 entities)
+2025-07-16 16:54:31,879 - neo4j_graph_builder - INFO - Created entity batch 17 (100 entities)
+2025-07-16 16:54:32,181 - neo4j_graph_builder - INFO - Created entity batch 18 (100 entities)
+2025-07-16 16:54:32,463 - neo4j_graph_builder - INFO - Created entity batch 19 (100 entities)
+2025-07-16 16:54:32,704 - neo4j_graph_builder - INFO - Created entity batch 20 (100 entities)
+2025-07-16 16:54:32,998 - neo4j_graph_builder - INFO - Created entity batch 21 (100 entities)
+2025-07-16 16:54:33,251 - neo4j_graph_builder - INFO - Created entity batch 22 (100 entities)
+2025-07-16 16:54:33,549 - neo4j_graph_builder - INFO - Created entity batch 23 (100 entities)
+2025-07-16 16:54:33,830 - neo4j_graph_builder - INFO - Created entity batch 24 (100 entities)
+2025-07-16 16:54:34,110 - neo4j_graph_builder - INFO - Created entity batch 25 (100 entities)
+2025-07-16 16:54:34,352 - neo4j_graph_builder - INFO - Created entity batch 26 (100 entities)
+2025-07-16 16:54:34,597 - neo4j_graph_builder - INFO - Created entity batch 27 (100 entities)
+2025-07-16 16:54:34,899 - neo4j_graph_builder - INFO - Created entity batch 28 (100 entities)
+2025-07-16 16:54:35,142 - neo4j_graph_builder - INFO - Created entity batch 29 (100 entities)
+2025-07-16 16:54:35,420 - neo4j_graph_builder - INFO - Created entity batch 30 (100 entities)
+2025-07-16 16:54:35,680 - neo4j_graph_builder - INFO - Created entity batch 31 (100 entities)
+2025-07-16 16:54:35,944 - neo4j_graph_builder - INFO - Created entity batch 32 (100 entities)
+2025-07-16 16:54:36,202 - neo4j_graph_builder - INFO - Created entity batch 33 (100 entities)
+2025-07-16 16:54:36,409 - neo4j_graph_builder - INFO - Created entity batch 34 (100 entities)
+2025-07-16 16:54:36,596 - neo4j_graph_builder - INFO - Created entity batch 35 (100 entities)
+2025-07-16 16:54:36,841 - neo4j_graph_builder - INFO - Created entity batch 36 (100 entities)
+2025-07-16 16:54:37,074 - neo4j_graph_builder - INFO - Created entity batch 37 (100 entities)
+2025-07-16 16:54:37,222 - neo4j_graph_builder - INFO - Created entity batch 38 (100 entities)
+2025-07-16 16:54:37,498 - neo4j_graph_builder - INFO - Created entity batch 39 (100 entities)
+2025-07-16 16:54:37,733 - neo4j_graph_builder - INFO - Created entity batch 40 (100 entities)
+2025-07-16 16:54:37,955 - neo4j_graph_builder - INFO - Created entity batch 41 (100 entities)
+2025-07-16 16:54:38,241 - neo4j_graph_builder - INFO - Created entity batch 42 (100 entities)
+2025-07-16 16:54:38,499 - neo4j_graph_builder - INFO - Created entity batch 43 (100 entities)
+2025-07-16 16:54:38,729 - neo4j_graph_builder - INFO - Created entity batch 44 (100 entities)
+2025-07-16 16:54:38,934 - neo4j_graph_builder - INFO - Created entity batch 45 (100 entities)
+2025-07-16 16:54:39,189 - neo4j_graph_builder - INFO - Created entity batch 46 (100 entities)
+2025-07-16 16:54:39,391 - neo4j_graph_builder - INFO - Created entity batch 47 (100 entities)
+2025-07-16 16:54:39,646 - neo4j_graph_builder - INFO - Created entity batch 48 (100 entities)
+2025-07-16 16:54:39,842 - neo4j_graph_builder - INFO - Created entity batch 49 (100 entities)
+2025-07-16 16:54:40,042 - neo4j_graph_builder - INFO - Created entity batch 50 (100 entities)
+2025-07-16 16:54:40,315 - neo4j_graph_builder - INFO - Created entity batch 51 (100 entities)
+2025-07-16 16:54:40,546 - neo4j_graph_builder - INFO - Created entity batch 52 (100 entities)
+2025-07-16 16:54:40,807 - neo4j_graph_builder - INFO - Created entity batch 53 (100 entities)
+2025-07-16 16:54:41,107 - neo4j_graph_builder - INFO - Created entity batch 54 (100 entities)
+2025-07-16 16:54:41,295 - neo4j_graph_builder - INFO - Created entity batch 55 (100 entities)
+2025-07-16 16:54:41,483 - neo4j_graph_builder - INFO - Created entity batch 56 (100 entities)
+2025-07-16 16:54:41,721 - neo4j_graph_builder - INFO - Created entity batch 57 (100 entities)
+2025-07-16 16:54:41,898 - neo4j_graph_builder - INFO - Created entity batch 58 (100 entities)
+2025-07-16 16:54:42,072 - neo4j_graph_builder - INFO - Created entity batch 59 (100 entities)
+2025-07-16 16:54:42,298 - neo4j_graph_builder - INFO - Created entity batch 60 (100 entities)
+2025-07-16 16:54:42,482 - neo4j_graph_builder - INFO - Created entity batch 61 (100 entities)
+2025-07-16 16:54:42,669 - neo4j_graph_builder - INFO - Created entity batch 62 (100 entities)
+2025-07-16 16:54:42,877 - neo4j_graph_builder - INFO - Created entity batch 63 (100 entities)
+2025-07-16 16:54:43,093 - neo4j_graph_builder - INFO - Created entity batch 64 (100 entities)
+2025-07-16 16:54:43,282 - neo4j_graph_builder - INFO - Created entity batch 65 (100 entities)
+2025-07-16 16:54:43,507 - neo4j_graph_builder - INFO - Created entity batch 66 (100 entities)
+2025-07-16 16:54:43,734 - neo4j_graph_builder - INFO - Created entity batch 67 (100 entities)
+2025-07-16 16:54:43,965 - neo4j_graph_builder - INFO - Created entity batch 68 (100 entities)
+2025-07-16 16:54:44,213 - neo4j_graph_builder - INFO - Created entity batch 69 (100 entities)
+2025-07-16 16:54:44,430 - neo4j_graph_builder - INFO - Created entity batch 70 (100 entities)
+2025-07-16 16:54:44,621 - neo4j_graph_builder - INFO - Created entity batch 71 (100 entities)
+2025-07-16 16:54:44,877 - neo4j_graph_builder - INFO - Created entity batch 72 (100 entities)
+2025-07-16 16:54:45,065 - neo4j_graph_builder - INFO - Created entity batch 73 (100 entities)
+2025-07-16 16:54:45,256 - neo4j_graph_builder - INFO - Created entity batch 74 (100 entities)
+2025-07-16 16:54:45,419 - neo4j_graph_builder - INFO - Created entity batch 75 (100 entities)
+2025-07-16 16:54:45,614 - neo4j_graph_builder - INFO - Created entity batch 76 (100 entities)
+2025-07-16 16:54:45,850 - neo4j_graph_builder - INFO - Created entity batch 77 (100 entities)
+2025-07-16 16:54:46,115 - neo4j_graph_builder - INFO - Created entity batch 78 (100 entities)
+2025-07-16 16:54:46,347 - neo4j_graph_builder - INFO - Created entity batch 79 (100 entities)
+2025-07-16 16:54:46,582 - neo4j_graph_builder - INFO - Created entity batch 80 (100 entities)
+2025-07-16 16:54:46,818 - neo4j_graph_builder - INFO - Created entity batch 81 (100 entities)
+2025-07-16 16:54:47,004 - neo4j_graph_builder - INFO - Created entity batch 82 (100 entities)
+2025-07-16 16:54:47,186 - neo4j_graph_builder - INFO - Created entity batch 83 (100 entities)
+2025-07-16 16:54:47,426 - neo4j_graph_builder - INFO - Created entity batch 84 (100 entities)
+2025-07-16 16:54:47,594 - neo4j_graph_builder - INFO - Created entity batch 85 (100 entities)
+2025-07-16 16:54:47,805 - neo4j_graph_builder - INFO - Created entity batch 86 (100 entities)
+2025-07-16 16:54:48,028 - neo4j_graph_builder - INFO - Created entity batch 87 (100 entities)
+2025-07-16 16:54:48,200 - neo4j_graph_builder - INFO - Created entity batch 88 (100 entities)
+2025-07-16 16:54:48,385 - neo4j_graph_builder - INFO - Created entity batch 89 (100 entities)
+2025-07-16 16:54:48,626 - neo4j_graph_builder - INFO - Created entity batch 90 (100 entities)
+2025-07-16 16:54:48,855 - neo4j_graph_builder - INFO - Created entity batch 91 (100 entities)
+2025-07-16 16:54:49,299 - neo4j_graph_builder - INFO - Created entity batch 92 (100 entities)
+2025-07-16 16:54:49,305 - neo4j_graph_builder - INFO - Created entity batch 93 (56 entities)
+2025-07-16 16:54:49,305 - neo4j_graph_builder - INFO - Creating 7824 relationships...
+2025-07-16 16:54:49,316 - neo4j_graph_builder - INFO - Creating 7824 relationships in batches of 1000
+2025-07-16 16:55:13,457 - neo4j_graph_builder - INFO - Created relationship batch 1 (1000 relationships)
+2025-07-16 16:55:37,154 - neo4j_graph_builder - INFO - Created relationship batch 2 (1000 relationships)
+2025-07-16 16:56:00,315 - neo4j_graph_builder - INFO - Created relationship batch 3 (1000 relationships)
+2025-07-16 16:56:23,137 - neo4j_graph_builder - INFO - Created relationship batch 4 (1000 relationships)
+2025-07-16 16:56:46,591 - neo4j_graph_builder - INFO - Created relationship batch 5 (1000 relationships)
+2025-07-16 16:57:09,643 - neo4j_graph_builder - INFO - Created relationship batch 6 (1000 relationships)
+2025-07-16 16:57:32,418 - neo4j_graph_builder - INFO - Created relationship batch 7 (1000 relationships)
+2025-07-16 16:57:51,716 - neo4j_graph_builder - INFO - Created relationship batch 8 (824 relationships)
+2025-07-16 16:57:52,659 - neo4j_graph_builder - INFO - Graph creation completed. Total nodes: 9256, Total relationships: 7824
+2025-07-16 16:57:52,776 - cross_platform_docker_manager - INFO - [OK] Neo4j graph loaded: 9256 nodes, 7824 relationships
+2025-07-16 16:57:52,776 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 16:57:52,776 - cross_platform_docker_manager - INFO - Generating platform-specific connection scripts...
+2025-07-16 16:57:52,819 - cross_platform_docker_manager - INFO - [SUCCESS] Flexible cross-platform knowledge graph creation completed successfully!
+2025-07-16 16:57:52,820 - cross_platform_docker_manager - INFO -    Neo4j Browser: http://localhost:7474
+2025-07-16 16:57:52,820 - cross_platform_docker_manager - INFO -    Bolt Connection: bolt://localhost:7687
+2025-07-16 16:57:52,820 - cross_platform_docker_manager - INFO -    Username: neo4j
+2025-07-16 16:57:52,820 - cross_platform_docker_manager - INFO -    Password: kg_us_national_04032024
+2025-07-16 16:57:52,821 - cross_platform_docker_manager - INFO -    Connection scripts saved:
+2025-07-16 16:57:52,821 - cross_platform_docker_manager - INFO -      batch: connection_scripts\connect_neo4j_kg_us_national_04032024_0905aa37.bat
+2025-07-16 16:57:52,821 - cross_platform_docker_manager - INFO -      powershell: connection_scripts\connect_neo4j_kg_us_national_04032024_0905aa37.ps1
+2025-07-16 17:05:55,107 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 17:05:55,107 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 17:05:55,108 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 17:06:30,739 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 17:06:30,740 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 17:06:30,740 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 17:13:39,265 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 17:13:39,266 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 17:13:39,266 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 17:13:39,465 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:13:39,465 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 17:13:39,482 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1529 rows, 66 columns
+2025-07-16 17:13:39,502 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:13:39,502 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:13:39,502 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 17:13:39,606 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-af3a075f
+2025-07-16 17:13:39,606 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 17:13:39,606 - cross_platform_docker_manager - INFO -   HTTP Port: 7475
+2025-07-16 17:13:39,607 - cross_platform_docker_manager - INFO -   Bolt Port: 7688
+2025-07-16 17:13:39,607 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_171339_af3a075f
+2025-07-16 17:13:40,295 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-af3a075f created successfully
+2025-07-16 17:13:40,296 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-af3a075f to be ready...
+2025-07-16 17:13:40,304 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 17:13:40,854 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7688, 0, 0)) (deadline Deadline(timeout=60.0))
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:13:40,854 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:13:45,864 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 17:13:45,892 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Connection to [::1]:7688 closed with incomplete handshake response
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:13:45,892 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:13:50,905 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 17:13:50,940 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Failed to read four byte Bolt handshake response from server ResolvedIPv6Address(('::1', 7688, 0, 0)) (deadline Deadline(timeout=60.0))
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:13:50,940 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:13:55,952 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 17:13:57,775 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 17:13:57,782 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:13:57,788 - cross_platform_docker_manager - INFO - [OK] neo4j-kg-us-national-04032024-af3a075f is ready!
+2025-07-16 17:13:57,788 - cross_platform_docker_manager - INFO - Building knowledge graph from CSV data with external ontology...
+2025-07-16 17:13:57,843 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:13:57,860 - kg_builder - INFO - Loaded 1529 respondents from CSV: D:/MARIST/Research/Environment/myenv/Project/KnowledgeGraph/data/survey_data.csv
+2025-07-16 17:13:57,867 - kg_builder - INFO - Known fields: 62
+2025-07-16 17:13:57,867 - kg_builder - INFO - Unknown fields: 4
+2025-07-16 17:13:57,867 - kg_builder - WARNING - Unknown fields found: ['wtfactor', 'racewtl', 'totalsmp', 'totalrv']...
+2025-07-16 17:13:57,867 - kg_builder - WARNING - Expected fields missing: ['wtfactor', 'racewtl', 'totalrv', 'totalsmp']...
+2025-07-16 17:13:57,867 - kg_builder - INFO - Extracting respondent entities...
+2025-07-16 17:13:57,936 - kg_builder - INFO - Extracting response category entities...
+2025-07-16 17:13:58,506 - kg_builder - INFO - Extracting question entities...
+2025-07-16 17:13:58,536 - kg_builder - INFO - Extracting survey metadata...
+2025-07-16 17:13:58,579 - kg_builder - INFO - Built knowledge graph with 10711 entities and 10648 relationships
+2025-07-16 17:13:58,579 - cross_platform_docker_manager - INFO - [OK] Knowledge graph built: 10711 entities, 10648 relationships
+2025-07-16 17:13:58,579 - cross_platform_docker_manager - INFO - Loading knowledge graph into Neo4j...
+2025-07-16 17:13:58,661 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 17:13:59,198 - neo4j_graph_builder - INFO - Database cleared successfully
+2025-07-16 17:13:59,198 - neo4j_graph_builder - INFO - Starting Neo4j graph construction...
+2025-07-16 17:13:59,198 - neo4j_graph_builder - INFO - Creating basic constraints and indexes...
+2025-07-16 17:13:59,671 - neo4j_graph_builder - INFO - Creating dynamic indexes based on entity types...
+2025-07-16 17:14:00,365 - neo4j_graph_builder - INFO - Creating 10711 entities...
+2025-07-16 17:14:00,365 - neo4j_graph_builder - INFO - Creating 10711 entities in batches of 100
+2025-07-16 17:14:00,805 - neo4j_graph_builder - INFO - Created entity batch 1 (100 entities)
+2025-07-16 17:14:00,900 - neo4j_graph_builder - INFO - Created entity batch 2 (100 entities)
+2025-07-16 17:14:01,012 - neo4j_graph_builder - INFO - Created entity batch 3 (100 entities)
+2025-07-16 17:14:01,080 - neo4j_graph_builder - INFO - Created entity batch 4 (100 entities)
+2025-07-16 17:14:01,195 - neo4j_graph_builder - INFO - Created entity batch 5 (100 entities)
+2025-07-16 17:14:01,280 - neo4j_graph_builder - INFO - Created entity batch 6 (100 entities)
+2025-07-16 17:14:01,389 - neo4j_graph_builder - INFO - Created entity batch 7 (100 entities)
+2025-07-16 17:14:01,473 - neo4j_graph_builder - INFO - Created entity batch 8 (100 entities)
+2025-07-16 17:14:01,552 - neo4j_graph_builder - INFO - Created entity batch 9 (100 entities)
+2025-07-16 17:14:01,632 - neo4j_graph_builder - INFO - Created entity batch 10 (100 entities)
+2025-07-16 17:14:01,743 - neo4j_graph_builder - INFO - Created entity batch 11 (100 entities)
+2025-07-16 17:14:01,826 - neo4j_graph_builder - INFO - Created entity batch 12 (100 entities)
+2025-07-16 17:14:01,918 - neo4j_graph_builder - INFO - Created entity batch 13 (100 entities)
+2025-07-16 17:14:01,997 - neo4j_graph_builder - INFO - Created entity batch 14 (100 entities)
+2025-07-16 17:14:02,073 - neo4j_graph_builder - INFO - Created entity batch 15 (100 entities)
+2025-07-16 17:14:02,687 - neo4j_graph_builder - INFO - Created entity batch 16 (100 entities)
+2025-07-16 17:14:02,801 - neo4j_graph_builder - INFO - Created entity batch 17 (100 entities)
+2025-07-16 17:14:03,007 - neo4j_graph_builder - INFO - Created entity batch 18 (100 entities)
+2025-07-16 17:14:03,211 - neo4j_graph_builder - INFO - Created entity batch 19 (100 entities)
+2025-07-16 17:14:03,367 - neo4j_graph_builder - INFO - Created entity batch 20 (100 entities)
+2025-07-16 17:14:03,516 - neo4j_graph_builder - INFO - Created entity batch 21 (100 entities)
+2025-07-16 17:14:03,656 - neo4j_graph_builder - INFO - Created entity batch 22 (100 entities)
+2025-07-16 17:14:03,810 - neo4j_graph_builder - INFO - Created entity batch 23 (100 entities)
+2025-07-16 17:14:03,989 - neo4j_graph_builder - INFO - Created entity batch 24 (100 entities)
+2025-07-16 17:14:04,132 - neo4j_graph_builder - INFO - Created entity batch 25 (100 entities)
+2025-07-16 17:14:04,314 - neo4j_graph_builder - INFO - Created entity batch 26 (100 entities)
+2025-07-16 17:14:04,460 - neo4j_graph_builder - INFO - Created entity batch 27 (100 entities)
+2025-07-16 17:14:04,646 - neo4j_graph_builder - INFO - Created entity batch 28 (100 entities)
+2025-07-16 17:14:04,781 - neo4j_graph_builder - INFO - Created entity batch 29 (100 entities)
+2025-07-16 17:14:04,947 - neo4j_graph_builder - INFO - Created entity batch 30 (100 entities)
+2025-07-16 17:14:05,097 - neo4j_graph_builder - INFO - Created entity batch 31 (100 entities)
+2025-07-16 17:14:05,243 - neo4j_graph_builder - INFO - Created entity batch 32 (100 entities)
+2025-07-16 17:14:05,384 - neo4j_graph_builder - INFO - Created entity batch 33 (100 entities)
+2025-07-16 17:14:05,525 - neo4j_graph_builder - INFO - Created entity batch 34 (100 entities)
+2025-07-16 17:14:05,664 - neo4j_graph_builder - INFO - Created entity batch 35 (100 entities)
+2025-07-16 17:14:05,813 - neo4j_graph_builder - INFO - Created entity batch 36 (100 entities)
+2025-07-16 17:14:05,947 - neo4j_graph_builder - INFO - Created entity batch 37 (100 entities)
+2025-07-16 17:14:06,087 - neo4j_graph_builder - INFO - Created entity batch 38 (100 entities)
+2025-07-16 17:14:06,264 - neo4j_graph_builder - INFO - Created entity batch 39 (100 entities)
+2025-07-16 17:14:06,398 - neo4j_graph_builder - INFO - Created entity batch 40 (100 entities)
+2025-07-16 17:14:06,550 - neo4j_graph_builder - INFO - Created entity batch 41 (100 entities)
+2025-07-16 17:14:06,682 - neo4j_graph_builder - INFO - Created entity batch 42 (100 entities)
+2025-07-16 17:14:06,814 - neo4j_graph_builder - INFO - Created entity batch 43 (100 entities)
+2025-07-16 17:14:06,948 - neo4j_graph_builder - INFO - Created entity batch 44 (100 entities)
+2025-07-16 17:14:07,069 - neo4j_graph_builder - INFO - Created entity batch 45 (100 entities)
+2025-07-16 17:14:07,222 - neo4j_graph_builder - INFO - Created entity batch 46 (100 entities)
+2025-07-16 17:14:07,352 - neo4j_graph_builder - INFO - Created entity batch 47 (100 entities)
+2025-07-16 17:14:07,490 - neo4j_graph_builder - INFO - Created entity batch 48 (100 entities)
+2025-07-16 17:14:07,608 - neo4j_graph_builder - INFO - Created entity batch 49 (100 entities)
+2025-07-16 17:14:07,724 - neo4j_graph_builder - INFO - Created entity batch 50 (100 entities)
+2025-07-16 17:14:07,863 - neo4j_graph_builder - INFO - Created entity batch 51 (100 entities)
+2025-07-16 17:14:07,983 - neo4j_graph_builder - INFO - Created entity batch 52 (100 entities)
+2025-07-16 17:14:08,093 - neo4j_graph_builder - INFO - Created entity batch 53 (100 entities)
+2025-07-16 17:14:08,243 - neo4j_graph_builder - INFO - Created entity batch 54 (100 entities)
+2025-07-16 17:14:08,349 - neo4j_graph_builder - INFO - Created entity batch 55 (100 entities)
+2025-07-16 17:14:08,487 - neo4j_graph_builder - INFO - Created entity batch 56 (100 entities)
+2025-07-16 17:14:08,606 - neo4j_graph_builder - INFO - Created entity batch 57 (100 entities)
+2025-07-16 17:14:08,725 - neo4j_graph_builder - INFO - Created entity batch 58 (100 entities)
+2025-07-16 17:14:08,846 - neo4j_graph_builder - INFO - Created entity batch 59 (100 entities)
+2025-07-16 17:14:08,987 - neo4j_graph_builder - INFO - Created entity batch 60 (100 entities)
+2025-07-16 17:14:09,113 - neo4j_graph_builder - INFO - Created entity batch 61 (100 entities)
+2025-07-16 17:14:09,243 - neo4j_graph_builder - INFO - Created entity batch 62 (100 entities)
+2025-07-16 17:14:09,364 - neo4j_graph_builder - INFO - Created entity batch 63 (100 entities)
+2025-07-16 17:14:09,513 - neo4j_graph_builder - INFO - Created entity batch 64 (100 entities)
+2025-07-16 17:14:09,632 - neo4j_graph_builder - INFO - Created entity batch 65 (100 entities)
+2025-07-16 17:14:09,758 - neo4j_graph_builder - INFO - Created entity batch 66 (100 entities)
+2025-07-16 17:14:09,905 - neo4j_graph_builder - INFO - Created entity batch 67 (100 entities)
+2025-07-16 17:14:10,056 - neo4j_graph_builder - INFO - Created entity batch 68 (100 entities)
+2025-07-16 17:14:10,176 - neo4j_graph_builder - INFO - Created entity batch 69 (100 entities)
+2025-07-16 17:14:10,372 - neo4j_graph_builder - INFO - Created entity batch 70 (100 entities)
+2025-07-16 17:14:10,532 - neo4j_graph_builder - INFO - Created entity batch 71 (100 entities)
+2025-07-16 17:14:10,703 - neo4j_graph_builder - INFO - Created entity batch 72 (100 entities)
+2025-07-16 17:14:10,847 - neo4j_graph_builder - INFO - Created entity batch 73 (100 entities)
+2025-07-16 17:14:10,981 - neo4j_graph_builder - INFO - Created entity batch 74 (100 entities)
+2025-07-16 17:14:11,095 - neo4j_graph_builder - INFO - Created entity batch 75 (100 entities)
+2025-07-16 17:14:11,220 - neo4j_graph_builder - INFO - Created entity batch 76 (100 entities)
+2025-07-16 17:14:11,343 - neo4j_graph_builder - INFO - Created entity batch 77 (100 entities)
+2025-07-16 17:14:11,463 - neo4j_graph_builder - INFO - Created entity batch 78 (100 entities)
+2025-07-16 17:14:11,582 - neo4j_graph_builder - INFO - Created entity batch 79 (100 entities)
+2025-07-16 17:14:11,696 - neo4j_graph_builder - INFO - Created entity batch 80 (100 entities)
+2025-07-16 17:14:11,819 - neo4j_graph_builder - INFO - Created entity batch 81 (100 entities)
+2025-07-16 17:14:11,931 - neo4j_graph_builder - INFO - Created entity batch 82 (100 entities)
+2025-07-16 17:14:12,073 - neo4j_graph_builder - INFO - Created entity batch 83 (100 entities)
+2025-07-16 17:14:12,184 - neo4j_graph_builder - INFO - Created entity batch 84 (100 entities)
+2025-07-16 17:14:12,342 - neo4j_graph_builder - INFO - Created entity batch 85 (100 entities)
+2025-07-16 17:14:12,494 - neo4j_graph_builder - INFO - Created entity batch 86 (100 entities)
+2025-07-16 17:14:12,690 - neo4j_graph_builder - INFO - Created entity batch 87 (100 entities)
+2025-07-16 17:14:12,846 - neo4j_graph_builder - INFO - Created entity batch 88 (100 entities)
+2025-07-16 17:14:12,964 - neo4j_graph_builder - INFO - Created entity batch 89 (100 entities)
+2025-07-16 17:14:13,119 - neo4j_graph_builder - INFO - Created entity batch 90 (100 entities)
+2025-07-16 17:14:13,232 - neo4j_graph_builder - INFO - Created entity batch 91 (100 entities)
+2025-07-16 17:14:13,361 - neo4j_graph_builder - INFO - Created entity batch 92 (100 entities)
+2025-07-16 17:14:13,483 - neo4j_graph_builder - INFO - Created entity batch 93 (100 entities)
+2025-07-16 17:14:13,598 - neo4j_graph_builder - INFO - Created entity batch 94 (100 entities)
+2025-07-16 17:14:13,726 - neo4j_graph_builder - INFO - Created entity batch 95 (100 entities)
+2025-07-16 17:14:13,854 - neo4j_graph_builder - INFO - Created entity batch 96 (100 entities)
+2025-07-16 17:14:13,986 - neo4j_graph_builder - INFO - Created entity batch 97 (100 entities)
+2025-07-16 17:14:14,115 - neo4j_graph_builder - INFO - Created entity batch 98 (100 entities)
+2025-07-16 17:14:14,244 - neo4j_graph_builder - INFO - Created entity batch 99 (100 entities)
+2025-07-16 17:14:14,365 - neo4j_graph_builder - INFO - Created entity batch 100 (100 entities)
+2025-07-16 17:14:14,493 - neo4j_graph_builder - INFO - Created entity batch 101 (100 entities)
+2025-07-16 17:14:14,628 - neo4j_graph_builder - INFO - Created entity batch 102 (100 entities)
+2025-07-16 17:14:14,803 - neo4j_graph_builder - INFO - Created entity batch 103 (100 entities)
+2025-07-16 17:14:14,923 - neo4j_graph_builder - INFO - Created entity batch 104 (100 entities)
+2025-07-16 17:14:15,094 - neo4j_graph_builder - INFO - Created entity batch 105 (100 entities)
+2025-07-16 17:14:15,260 - neo4j_graph_builder - INFO - Created entity batch 106 (100 entities)
+2025-07-16 17:14:15,709 - neo4j_graph_builder - INFO - Created entity batch 107 (100 entities)
+2025-07-16 17:14:15,823 - neo4j_graph_builder - INFO - Created entity batch 108 (11 entities)
+2025-07-16 17:14:15,823 - neo4j_graph_builder - INFO - Creating 10648 relationships...
+2025-07-16 17:14:15,823 - neo4j_graph_builder - INFO - Creating 10648 relationships in batches of 1000
+2025-07-16 17:14:38,721 - neo4j_graph_builder - INFO - Created relationship batch 1 (1000 relationships)
+2025-07-16 17:15:01,793 - neo4j_graph_builder - INFO - Created relationship batch 2 (1000 relationships)
+2025-07-16 17:15:24,068 - neo4j_graph_builder - INFO - Created relationship batch 3 (1000 relationships)
+2025-07-16 17:15:48,505 - neo4j_graph_builder - INFO - Created relationship batch 4 (1000 relationships)
+2025-07-16 17:16:11,536 - neo4j_graph_builder - INFO - Created relationship batch 5 (1000 relationships)
+2025-07-16 17:16:33,319 - neo4j_graph_builder - INFO - Created relationship batch 6 (1000 relationships)
+2025-07-16 17:17:02,518 - neo4j_graph_builder - INFO - Created relationship batch 7 (1000 relationships)
+2025-07-16 17:17:29,412 - neo4j_graph_builder - INFO - Created relationship batch 8 (1000 relationships)
+2025-07-16 17:17:57,625 - neo4j_graph_builder - INFO - Created relationship batch 9 (1000 relationships)
+2025-07-16 17:18:31,450 - neo4j_graph_builder - INFO - Created relationship batch 10 (1000 relationships)
+2025-07-16 17:18:55,551 - neo4j_graph_builder - INFO - Created relationship batch 11 (648 relationships)
+2025-07-16 17:18:57,974 - neo4j_graph_builder - INFO - Graph creation completed. Total nodes: 10711, Total relationships: 10648
+2025-07-16 17:18:58,152 - cross_platform_docker_manager - INFO - [OK] Neo4j graph loaded: 10711 nodes, 10648 relationships
+2025-07-16 17:18:58,155 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:18:58,155 - cross_platform_docker_manager - INFO - Generating platform-specific connection scripts...
+2025-07-16 17:18:58,244 - cross_platform_docker_manager - INFO - [SUCCESS] Flexible cross-platform knowledge graph creation completed successfully!
+2025-07-16 17:18:58,245 - cross_platform_docker_manager - INFO -    Neo4j Browser: http://localhost:7475
+2025-07-16 17:18:58,245 - cross_platform_docker_manager - INFO -    Bolt Connection: bolt://localhost:7688
+2025-07-16 17:18:58,246 - cross_platform_docker_manager - INFO -    Username: neo4j
+2025-07-16 17:18:58,247 - cross_platform_docker_manager - INFO -    Password: kg_us_national_04032024
+2025-07-16 17:18:58,247 - cross_platform_docker_manager - INFO -    Connection scripts saved:
+2025-07-16 17:18:58,249 - cross_platform_docker_manager - INFO -      batch: connection_scripts\connect_neo4j_kg_us_national_04032024_af3a075f.bat
+2025-07-16 17:18:58,251 - cross_platform_docker_manager - INFO -      powershell: connection_scripts\connect_neo4j_kg_us_national_04032024_af3a075f.ps1
+2025-07-16 17:35:43,455 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 17:35:43,456 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 17:35:43,457 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 17:35:43,658 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:35:43,659 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_03052025
+2025-07-16 17:35:43,684 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1529 rows, 66 columns
+2025-07-16 17:35:43,704 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:35:43,704 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:35:43,704 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 17:35:43,799 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-03052025-70de63d7
+2025-07-16 17:35:43,799 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 17:35:43,800 - cross_platform_docker_manager - INFO -   HTTP Port: 7475
+2025-07-16 17:35:43,800 - cross_platform_docker_manager - INFO -   Bolt Port: 7688
+2025-07-16 17:35:43,800 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_173543_70de63d7
+2025-07-16 17:35:44,325 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-03052025-70de63d7 created successfully
+2025-07-16 17:35:44,326 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-03052025-70de63d7 to be ready...
+2025-07-16 17:35:44,335 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_03052025
+2025-07-16 17:35:44,876 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Connection to [::1]:7688 closed with incomplete handshake response
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:35:44,876 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:35:49,887 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_03052025
+2025-07-16 17:35:49,911 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Connection to [::1]:7688 closed with incomplete handshake response
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:35:49,912 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:35:54,922 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_03052025
+2025-07-16 17:35:54,952 - neo4j_graph_builder - ERROR - Neo4j service unavailable: Couldn't connect to localhost:7688 (resolved to ('[::1]:7688', '127.0.0.1:7688')):
+Connection to [::1]:7688 closed with incomplete handshake response
+Connection to 127.0.0.1:7688 closed with incomplete handshake response
+2025-07-16 17:35:54,953 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:35:59,963 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_03052025
+2025-07-16 17:36:01,617 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 17:36:01,629 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:36:01,630 - cross_platform_docker_manager - INFO - [OK] neo4j-kg-us-national-03052025-70de63d7 is ready!
+2025-07-16 17:36:01,630 - cross_platform_docker_manager - INFO - Building knowledge graph from CSV data with external ontology...
+2025-07-16 17:36:01,682 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\KnowledgeGraph\utils\survey_ontology.py
+2025-07-16 17:36:01,712 - kg_builder - INFO - Loaded 1529 respondents from CSV: D:/MARIST/Research/Environment/myenv/Project/KnowledgeGraph/data/survey_data.csv
+2025-07-16 17:36:01,712 - kg_builder - INFO - Known fields: 62
+2025-07-16 17:36:01,712 - kg_builder - INFO - Unknown fields: 4
+2025-07-16 17:36:01,712 - kg_builder - WARNING - Unknown fields found: ['wtfactor', 'racewtl', 'totalsmp', 'totalrv']...
+2025-07-16 17:36:01,712 - kg_builder - WARNING - Expected fields missing: ['totalsmp', 'totalrv', 'wtfactor', 'racewtl']...
+2025-07-16 17:36:01,712 - kg_builder - INFO - Extracting respondent entities...
+2025-07-16 17:36:01,772 - kg_builder - INFO - Extracting response category entities...
+2025-07-16 17:36:02,427 - kg_builder - INFO - Extracting question entities...
+2025-07-16 17:36:02,458 - kg_builder - INFO - Extracting survey metadata...
+2025-07-16 17:36:02,511 - kg_builder - INFO - Built knowledge graph with 10711 entities and 10648 relationships
+2025-07-16 17:36:02,517 - cross_platform_docker_manager - INFO - [OK] Knowledge graph built: 10711 entities, 10648 relationships
+2025-07-16 17:36:02,517 - cross_platform_docker_manager - INFO - Loading knowledge graph into Neo4j...
+2025-07-16 17:36:02,602 - neo4j_graph_builder - INFO - Successfully connected to Neo4j
+2025-07-16 17:36:03,320 - neo4j_graph_builder - INFO - Database cleared successfully
+2025-07-16 17:36:03,320 - neo4j_graph_builder - INFO - Starting Neo4j graph construction...
+2025-07-16 17:36:03,320 - neo4j_graph_builder - INFO - Creating basic constraints and indexes...
+2025-07-16 17:36:03,941 - neo4j_graph_builder - INFO - Creating dynamic indexes based on entity types...
+2025-07-16 17:36:04,618 - neo4j_graph_builder - INFO - Creating 10711 entities...
+2025-07-16 17:36:04,618 - neo4j_graph_builder - INFO - Creating 10711 entities in batches of 100
+2025-07-16 17:36:05,334 - neo4j_graph_builder - INFO - Created entity batch 1 (100 entities)
+2025-07-16 17:36:05,467 - neo4j_graph_builder - INFO - Created entity batch 2 (100 entities)
+2025-07-16 17:36:05,587 - neo4j_graph_builder - INFO - Created entity batch 3 (100 entities)
+2025-07-16 17:36:05,673 - neo4j_graph_builder - INFO - Created entity batch 4 (100 entities)
+2025-07-16 17:36:05,800 - neo4j_graph_builder - INFO - Created entity batch 5 (100 entities)
+2025-07-16 17:36:05,919 - neo4j_graph_builder - INFO - Created entity batch 6 (100 entities)
+2025-07-16 17:36:05,997 - neo4j_graph_builder - INFO - Created entity batch 7 (100 entities)
+2025-07-16 17:36:06,102 - neo4j_graph_builder - INFO - Created entity batch 8 (100 entities)
+2025-07-16 17:36:06,203 - neo4j_graph_builder - INFO - Created entity batch 9 (100 entities)
+2025-07-16 17:36:06,288 - neo4j_graph_builder - INFO - Created entity batch 10 (100 entities)
+2025-07-16 17:36:06,378 - neo4j_graph_builder - INFO - Created entity batch 11 (100 entities)
+2025-07-16 17:36:06,465 - neo4j_graph_builder - INFO - Created entity batch 12 (100 entities)
+2025-07-16 17:36:06,547 - neo4j_graph_builder - INFO - Created entity batch 13 (100 entities)
+2025-07-16 17:36:06,624 - neo4j_graph_builder - INFO - Created entity batch 14 (100 entities)
+2025-07-16 17:36:06,703 - neo4j_graph_builder - INFO - Created entity batch 15 (100 entities)
+2025-07-16 17:36:07,328 - neo4j_graph_builder - INFO - Created entity batch 16 (100 entities)
+2025-07-16 17:36:07,431 - neo4j_graph_builder - INFO - Created entity batch 17 (100 entities)
+2025-07-16 17:36:07,597 - neo4j_graph_builder - INFO - Created entity batch 18 (100 entities)
+2025-07-16 17:36:07,755 - neo4j_graph_builder - INFO - Created entity batch 19 (100 entities)
+2025-07-16 17:36:07,947 - neo4j_graph_builder - INFO - Created entity batch 20 (100 entities)
+2025-07-16 17:36:08,115 - neo4j_graph_builder - INFO - Created entity batch 21 (100 entities)
+2025-07-16 17:36:08,313 - neo4j_graph_builder - INFO - Created entity batch 22 (100 entities)
+2025-07-16 17:36:08,472 - neo4j_graph_builder - INFO - Created entity batch 23 (100 entities)
+2025-07-16 17:36:08,611 - neo4j_graph_builder - INFO - Created entity batch 24 (100 entities)
+2025-07-16 17:36:08,736 - neo4j_graph_builder - INFO - Created entity batch 25 (100 entities)
+2025-07-16 17:36:08,913 - neo4j_graph_builder - INFO - Created entity batch 26 (100 entities)
+2025-07-16 17:36:09,054 - neo4j_graph_builder - INFO - Created entity batch 27 (100 entities)
+2025-07-16 17:36:09,234 - neo4j_graph_builder - INFO - Created entity batch 28 (100 entities)
+2025-07-16 17:36:09,369 - neo4j_graph_builder - INFO - Created entity batch 29 (100 entities)
+2025-07-16 17:36:09,513 - neo4j_graph_builder - INFO - Created entity batch 30 (100 entities)
+2025-07-16 17:36:09,665 - neo4j_graph_builder - INFO - Created entity batch 31 (100 entities)
+2025-07-16 17:36:09,803 - neo4j_graph_builder - INFO - Created entity batch 32 (100 entities)
+2025-07-16 17:36:09,937 - neo4j_graph_builder - INFO - Created entity batch 33 (100 entities)
+2025-07-16 17:36:10,064 - neo4j_graph_builder - INFO - Created entity batch 34 (100 entities)
+2025-07-16 17:36:10,212 - neo4j_graph_builder - INFO - Created entity batch 35 (100 entities)
+2025-07-16 17:36:10,359 - neo4j_graph_builder - INFO - Created entity batch 36 (100 entities)
+2025-07-16 17:36:10,497 - neo4j_graph_builder - INFO - Created entity batch 37 (100 entities)
+2025-07-16 17:36:10,631 - neo4j_graph_builder - INFO - Created entity batch 38 (100 entities)
+2025-07-16 17:36:10,825 - neo4j_graph_builder - INFO - Created entity batch 39 (100 entities)
+2025-07-16 17:36:11,006 - neo4j_graph_builder - INFO - Created entity batch 40 (100 entities)
+2025-07-16 17:36:11,142 - neo4j_graph_builder - INFO - Created entity batch 41 (100 entities)
+2025-07-16 17:36:11,286 - neo4j_graph_builder - INFO - Created entity batch 42 (100 entities)
+2025-07-16 17:36:11,399 - neo4j_graph_builder - INFO - Created entity batch 43 (100 entities)
+2025-07-16 17:36:11,530 - neo4j_graph_builder - INFO - Created entity batch 44 (100 entities)
+2025-07-16 17:36:11,649 - neo4j_graph_builder - INFO - Created entity batch 45 (100 entities)
+2025-07-16 17:36:11,754 - neo4j_graph_builder - INFO - Created entity batch 46 (100 entities)
+2025-07-16 17:36:11,886 - neo4j_graph_builder - INFO - Created entity batch 47 (100 entities)
+2025-07-16 17:36:12,006 - neo4j_graph_builder - INFO - Created entity batch 48 (100 entities)
+2025-07-16 17:36:12,136 - neo4j_graph_builder - INFO - Created entity batch 49 (100 entities)
+2025-07-16 17:36:12,255 - neo4j_graph_builder - INFO - Created entity batch 50 (100 entities)
+2025-07-16 17:36:12,386 - neo4j_graph_builder - INFO - Created entity batch 51 (100 entities)
+2025-07-16 17:36:12,534 - neo4j_graph_builder - INFO - Created entity batch 52 (100 entities)
+2025-07-16 17:36:12,658 - neo4j_graph_builder - INFO - Created entity batch 53 (100 entities)
+2025-07-16 17:36:12,787 - neo4j_graph_builder - INFO - Created entity batch 54 (100 entities)
+2025-07-16 17:36:12,918 - neo4j_graph_builder - INFO - Created entity batch 55 (100 entities)
+2025-07-16 17:36:13,050 - neo4j_graph_builder - INFO - Created entity batch 56 (100 entities)
+2025-07-16 17:36:13,183 - neo4j_graph_builder - INFO - Created entity batch 57 (100 entities)
+2025-07-16 17:36:13,300 - neo4j_graph_builder - INFO - Created entity batch 58 (100 entities)
+2025-07-16 17:36:13,449 - neo4j_graph_builder - INFO - Created entity batch 59 (100 entities)
+2025-07-16 17:36:13,563 - neo4j_graph_builder - INFO - Created entity batch 60 (100 entities)
+2025-07-16 17:36:13,687 - neo4j_graph_builder - INFO - Created entity batch 61 (100 entities)
+2025-07-16 17:36:13,804 - neo4j_graph_builder - INFO - Created entity batch 62 (100 entities)
+2025-07-16 17:36:13,946 - neo4j_graph_builder - INFO - Created entity batch 63 (100 entities)
+2025-07-16 17:36:14,067 - neo4j_graph_builder - INFO - Created entity batch 64 (100 entities)
+2025-07-16 17:36:14,196 - neo4j_graph_builder - INFO - Created entity batch 65 (100 entities)
+2025-07-16 17:36:14,321 - neo4j_graph_builder - INFO - Created entity batch 66 (100 entities)
+2025-07-16 17:36:14,453 - neo4j_graph_builder - INFO - Created entity batch 67 (100 entities)
+2025-07-16 17:36:14,573 - neo4j_graph_builder - INFO - Created entity batch 68 (100 entities)
+2025-07-16 17:36:14,697 - neo4j_graph_builder - INFO - Created entity batch 69 (100 entities)
+2025-07-16 17:36:14,859 - neo4j_graph_builder - INFO - Created entity batch 70 (100 entities)
+2025-07-16 17:36:15,022 - neo4j_graph_builder - INFO - Created entity batch 71 (100 entities)
+2025-07-16 17:36:15,188 - neo4j_graph_builder - INFO - Created entity batch 72 (100 entities)
+2025-07-16 17:36:15,315 - neo4j_graph_builder - INFO - Created entity batch 73 (100 entities)
+2025-07-16 17:36:15,442 - neo4j_graph_builder - INFO - Created entity batch 74 (100 entities)
+2025-07-16 17:36:15,555 - neo4j_graph_builder - INFO - Created entity batch 75 (100 entities)
+2025-07-16 17:36:15,711 - neo4j_graph_builder - INFO - Created entity batch 76 (100 entities)
+2025-07-16 17:36:15,839 - neo4j_graph_builder - INFO - Created entity batch 77 (100 entities)
+2025-07-16 17:36:15,953 - neo4j_graph_builder - INFO - Created entity batch 78 (100 entities)
+2025-07-16 17:36:16,099 - neo4j_graph_builder - INFO - Created entity batch 79 (100 entities)
+2025-07-16 17:36:16,221 - neo4j_graph_builder - INFO - Created entity batch 80 (100 entities)
+2025-07-16 17:36:16,338 - neo4j_graph_builder - INFO - Created entity batch 81 (100 entities)
+2025-07-16 17:36:16,468 - neo4j_graph_builder - INFO - Created entity batch 82 (100 entities)
+2025-07-16 17:36:16,598 - neo4j_graph_builder - INFO - Created entity batch 83 (100 entities)
+2025-07-16 17:36:16,722 - neo4j_graph_builder - INFO - Created entity batch 84 (100 entities)
+2025-07-16 17:36:16,854 - neo4j_graph_builder - INFO - Created entity batch 85 (100 entities)
+2025-07-16 17:36:17,009 - neo4j_graph_builder - INFO - Created entity batch 86 (100 entities)
+2025-07-16 17:36:17,224 - neo4j_graph_builder - INFO - Created entity batch 87 (100 entities)
+2025-07-16 17:36:17,381 - neo4j_graph_builder - INFO - Created entity batch 88 (100 entities)
+2025-07-16 17:36:17,537 - neo4j_graph_builder - INFO - Created entity batch 89 (100 entities)
+2025-07-16 17:36:17,689 - neo4j_graph_builder - INFO - Created entity batch 90 (100 entities)
+2025-07-16 17:36:17,816 - neo4j_graph_builder - INFO - Created entity batch 91 (100 entities)
+2025-07-16 17:36:17,943 - neo4j_graph_builder - INFO - Created entity batch 92 (100 entities)
+2025-07-16 17:36:18,069 - neo4j_graph_builder - INFO - Created entity batch 93 (100 entities)
+2025-07-16 17:36:18,211 - neo4j_graph_builder - INFO - Created entity batch 94 (100 entities)
+2025-07-16 17:36:18,334 - neo4j_graph_builder - INFO - Created entity batch 95 (100 entities)
+2025-07-16 17:36:18,462 - neo4j_graph_builder - INFO - Created entity batch 96 (100 entities)
+2025-07-16 17:36:18,586 - neo4j_graph_builder - INFO - Created entity batch 97 (100 entities)
+2025-07-16 17:36:18,710 - neo4j_graph_builder - INFO - Created entity batch 98 (100 entities)
+2025-07-16 17:36:18,871 - neo4j_graph_builder - INFO - Created entity batch 99 (100 entities)
+2025-07-16 17:36:18,977 - neo4j_graph_builder - INFO - Created entity batch 100 (100 entities)
+2025-07-16 17:36:19,098 - neo4j_graph_builder - INFO - Created entity batch 101 (100 entities)
+2025-07-16 17:36:19,219 - neo4j_graph_builder - INFO - Created entity batch 102 (100 entities)
+2025-07-16 17:36:19,356 - neo4j_graph_builder - INFO - Created entity batch 103 (100 entities)
+2025-07-16 17:36:19,477 - neo4j_graph_builder - INFO - Created entity batch 104 (100 entities)
+2025-07-16 17:36:19,638 - neo4j_graph_builder - INFO - Created entity batch 105 (100 entities)
+2025-07-16 17:36:19,799 - neo4j_graph_builder - INFO - Created entity batch 106 (100 entities)
+2025-07-16 17:36:20,199 - neo4j_graph_builder - INFO - Created entity batch 107 (100 entities)
+2025-07-16 17:36:20,299 - neo4j_graph_builder - INFO - Created entity batch 108 (11 entities)
+2025-07-16 17:36:20,299 - neo4j_graph_builder - INFO - Creating 10648 relationships...
+2025-07-16 17:36:20,301 - neo4j_graph_builder - INFO - Creating 10648 relationships in batches of 1000
+2025-07-16 17:36:37,066 - neo4j_graph_builder - INFO - Created relationship batch 1 (1000 relationships)
+2025-07-16 17:36:53,623 - neo4j_graph_builder - INFO - Created relationship batch 2 (1000 relationships)
+2025-07-16 17:37:10,176 - neo4j_graph_builder - INFO - Created relationship batch 3 (1000 relationships)
+2025-07-16 17:37:28,057 - neo4j_graph_builder - INFO - Created relationship batch 4 (1000 relationships)
+2025-07-16 17:37:46,642 - neo4j_graph_builder - INFO - Created relationship batch 5 (1000 relationships)
+2025-07-16 17:38:04,623 - neo4j_graph_builder - INFO - Created relationship batch 6 (1000 relationships)
+2025-07-16 17:38:22,505 - neo4j_graph_builder - INFO - Created relationship batch 7 (1000 relationships)
+2025-07-16 17:38:40,227 - neo4j_graph_builder - INFO - Created relationship batch 8 (1000 relationships)
+2025-07-16 17:38:57,331 - neo4j_graph_builder - INFO - Created relationship batch 9 (1000 relationships)
+2025-07-16 17:39:14,157 - neo4j_graph_builder - INFO - Created relationship batch 10 (1000 relationships)
+2025-07-16 17:39:24,650 - neo4j_graph_builder - INFO - Created relationship batch 11 (648 relationships)
+2025-07-16 17:39:25,599 - neo4j_graph_builder - INFO - Graph creation completed. Total nodes: 10711, Total relationships: 10648
+2025-07-16 17:39:25,718 - cross_platform_docker_manager - INFO - [OK] Neo4j graph loaded: 10711 nodes, 10648 relationships
+2025-07-16 17:39:25,720 - neo4j_graph_builder - INFO - Neo4j connection closed
+2025-07-16 17:39:25,721 - cross_platform_docker_manager - INFO - Generating platform-specific connection scripts...
+2025-07-16 17:39:25,749 - cross_platform_docker_manager - INFO - [SUCCESS] Flexible cross-platform knowledge graph creation completed successfully!
+2025-07-16 17:39:25,749 - cross_platform_docker_manager - INFO -    Neo4j Browser: http://localhost:7475
+2025-07-16 17:39:25,749 - cross_platform_docker_manager - INFO -    Bolt Connection: bolt://localhost:7688
+2025-07-16 17:39:25,750 - cross_platform_docker_manager - INFO -    Username: neo4j
+2025-07-16 17:39:25,750 - cross_platform_docker_manager - INFO -    Password: kg_us_national_03052025
+2025-07-16 17:39:25,750 - cross_platform_docker_manager - INFO -    Connection scripts saved:
+2025-07-16 17:39:25,750 - cross_platform_docker_manager - INFO -      batch: connection_scripts\connect_neo4j_kg_us_national_03052025_70de63d7.bat
+2025-07-16 17:39:25,751 - cross_platform_docker_manager - INFO -      powershell: connection_scripts\connect_neo4j_kg_us_national_03052025_70de63d7.ps1
+2025-07-16 18:25:46,700 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 18:25:46,701 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 18:25:46,701 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 18:25:46,702 - cross_platform_docker_manager - INFO - Discovering existing Neo4j knowledge graph instances...
+2025-07-16 18:25:46,808 - cross_platform_docker_manager - WARNING - Error processing container neo4j-kg-us-national-03052025-70de63d7: No module named 'your_docker_manager_file'
+2025-07-16 18:25:46,809 - cross_platform_docker_manager - WARNING - Error processing container neo4j-kg-us-national-04032024-0905aa37: No module named 'your_docker_manager_file'
+2025-07-16 18:25:46,810 - cross_platform_docker_manager - INFO - Discovered 0 existing instances
+2025-07-16 18:41:16,489 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 18:41:16,489 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 18:41:16,490 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 18:41:16,490 - cross_platform_docker_manager - INFO - Discovering existing Neo4j knowledge graph instances...
+2025-07-16 18:41:16,607 - cross_platform_docker_manager - INFO - Discovered instance: neo4j-kg-us-national-03052025-70de63d7 (Status: ready)
+2025-07-16 18:41:16,608 - cross_platform_docker_manager - INFO - Discovered instance: neo4j-kg-us-national-04032024-0905aa37 (Status: ready)
+2025-07-16 18:41:16,608 - cross_platform_docker_manager - INFO - Discovered 2 existing instances
+2025-07-17 23:30:25,116 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-17 23:30:25,117 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-17 23:30:25,117 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-17 23:30:25,118 - cross_platform_docker_manager - INFO - Discovering existing Neo4j knowledge graph instances...
+2025-07-17 23:30:25,267 - cross_platform_docker_manager - INFO - Discovered instance: neo4j-kg-us-national-03052025-70de63d7 (Status: ready)
+2025-07-17 23:30:25,268 - cross_platform_docker_manager - INFO - Discovered instance: neo4j-kg-us-national-04032024-0905aa37 (Status: ready)
+2025-07-17 23:30:25,268 - cross_platform_docker_manager - INFO - Discovered 2 existing instances

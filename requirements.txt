@@ -1,0 +1,17 @@
+# Neo4j Knowledge Graph Builder - Minimal Requirements
+# Essential dependencies only
+
+# Core Data Processing
+pandas>=1.5.0
+
+# Neo4j Database Integration  
+neo4j>=5.0.0
+
+# Docker Management
+docker>=6.0.0
+
+# Configuration Files
+pyyaml>=6.0.0
+
+# Progress Bars
+tqdm>=4.64.0

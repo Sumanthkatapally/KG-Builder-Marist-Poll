@@ -1,0 +1,129 @@
+2025-07-16 15:21:12,011 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:21:12,011 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:21:12,011 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:31:00,994 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:31:00,995 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:31:00,995 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:31:23,019 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:31:23,020 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:31:23,020 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:32:21,829 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:32:21,829 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:32:21,830 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:32:21,959 - cross_platform_docker_manager - ERROR - Failed to load ontology from D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py: No module named 'pydantic'
+2025-07-16 15:33:33,533 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:33:33,533 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:33:33,534 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:33:35,017 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:33:35,018 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 15:33:35,069 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 15:33:35,104 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:33:35,105 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:33:35,106 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 15:33:35,306 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-d75ac3e6
+2025-07-16 15:33:35,306 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 15:33:35,306 - cross_platform_docker_manager - INFO -   HTTP Port: 7474
+2025-07-16 15:33:35,306 - cross_platform_docker_manager - INFO -   Bolt Port: 7687
+2025-07-16 15:33:35,307 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_153335_d75ac3e6
+2025-07-16 15:33:36,603 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-d75ac3e6 created successfully
+2025-07-16 15:33:36,603 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-d75ac3e6 to be ready...
+2025-07-16 15:38:38,563 - cross_platform_docker_manager - ERROR - [ERROR] neo4j-kg-us-national-04032024-d75ac3e6 failed to become ready within 300 seconds
+2025-07-16 15:38:38,565 - cross_platform_docker_manager - ERROR - Docker instance failed to become ready
+2025-07-16 15:58:30,213 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 15:58:30,213 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 15:58:30,214 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 15:58:30,450 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:58:30,460 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 15:58:30,503 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 15:58:30,530 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:58:30,530 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 15:58:30,530 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 15:58:30,610 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-7d825763
+2025-07-16 15:58:30,610 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 15:58:30,610 - cross_platform_docker_manager - INFO -   HTTP Port: 7474
+2025-07-16 15:58:30,611 - cross_platform_docker_manager - INFO -   Bolt Port: 7687
+2025-07-16 15:58:30,611 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_155830_7d825763
+2025-07-16 15:58:30,964 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-7d825763 created successfully
+2025-07-16 15:58:30,965 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-7d825763 to be ready...
+2025-07-16 16:03:31,791 - cross_platform_docker_manager - ERROR - [ERROR] neo4j-kg-us-national-04032024-7d825763 failed to become ready within 300 seconds
+2025-07-16 16:03:31,791 - cross_platform_docker_manager - ERROR - Docker instance failed to become ready
+2025-07-16 16:27:37,624 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 16:27:37,624 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 16:27:37,625 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 16:27:37,877 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:27:37,877 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 16:27:37,919 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 16:27:37,948 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:27:37,948 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:27:37,948 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 16:27:38,037 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-6dc8bb7b
+2025-07-16 16:27:38,038 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 16:27:38,038 - cross_platform_docker_manager - INFO -   HTTP Port: 7475
+2025-07-16 16:27:38,038 - cross_platform_docker_manager - INFO -   Bolt Port: 7688
+2025-07-16 16:27:38,038 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_162737_6dc8bb7b
+2025-07-16 16:27:38,629 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-6dc8bb7b created successfully
+2025-07-16 16:27:38,630 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-6dc8bb7b to be ready...
+2025-07-16 16:45:49,490 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 16:45:49,497 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 16:45:49,497 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 16:45:51,600 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:45:51,601 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 16:45:51,640 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 16:45:51,681 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:45:51,681 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:45:51,681 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 16:45:51,788 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-4a8e554c
+2025-07-16 16:45:51,788 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 16:45:51,789 - cross_platform_docker_manager - INFO -   HTTP Port: 7474
+2025-07-16 16:45:51,790 - cross_platform_docker_manager - INFO -   Bolt Port: 7687
+2025-07-16 16:45:51,790 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_164551_4a8e554c
+2025-07-16 16:45:51,790 - cross_platform_docker_manager - ERROR - Failed to create container neo4j-kg-us-national-04032024-4a8e554c: name 'password' is not defined
+2025-07-16 16:45:51,790 - cross_platform_docker_manager - ERROR - Failed to create Docker instance: name 'password' is not defined
+2025-07-16 16:46:07,823 - cross_platform_docker_manager - INFO - Initialized on platform: windows
+2025-07-16 16:46:07,823 - cross_platform_docker_manager - INFO - Running on windows
+2025-07-16 16:46:07,823 - __main__ - INFO - Initialized flexible cross-platform pipeline on windows
+2025-07-16 16:46:08,055 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:46:08,057 - cross_platform_docker_manager - INFO - Starting flexible cross-platform knowledge graph creation for: US_NATIONAL_04032024
+2025-07-16 16:46:08,097 - cross_platform_docker_manager - INFO - [OK] Survey data validated: 1305 rows, 177 columns
+2025-07-16 16:46:08,140 - cross_platform_docker_manager - INFO - Successfully loaded ontology from: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:46:08,140 - cross_platform_docker_manager - INFO - [OK] Survey ontology validated and loaded: D:\MARIST\Research\Environment\myenv\Project\Ontology_App\data\survey\National\04032024\Ontology\survey_ontology.py
+2025-07-16 16:46:08,141 - cross_platform_docker_manager - INFO - Creating Docker Neo4j instance...
+2025-07-16 16:46:08,228 - cross_platform_docker_manager - INFO - Creating Neo4j container: neo4j-kg-us-national-04032024-b00a53c3
+2025-07-16 16:46:08,229 - cross_platform_docker_manager - INFO -   Platform: windows
+2025-07-16 16:46:08,229 - cross_platform_docker_manager - INFO -   HTTP Port: 7474
+2025-07-16 16:46:08,229 - cross_platform_docker_manager - INFO -   Bolt Port: 7687
+2025-07-16 16:46:08,229 - cross_platform_docker_manager - INFO -   Volume: neo4j_data_neo4j_kg_20250716_164608_b00a53c3
+2025-07-16 16:46:08,942 - cross_platform_docker_manager - INFO - Container neo4j-kg-us-national-04032024-b00a53c3 created successfully
+2025-07-16 16:46:08,944 - cross_platform_docker_manager - INFO - Waiting for neo4j-kg-us-national-04032024-b00a53c3 to be ready...
+2025-07-16 16:46:08,953 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:46:20,132 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:46:30,150 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:46:40,168 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:46:50,189 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:00,207 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:10,221 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:20,243 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:30,264 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:40,285 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:47:50,304 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:00,324 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:10,336 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:20,353 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:30,387 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:40,408 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:48:50,433 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:00,459 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:10,478 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:20,514 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:30,536 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:40,557 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:49:50,574 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:00,594 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:10,614 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:20,638 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:30,666 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:40,685 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:50:50,705 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:51:00,728 - cross_platform_docker_manager - INFO - DEBUG: Trying to connect with password: kg_us_national_04032024
+2025-07-16 16:51:10,738 - cross_platform_docker_manager - ERROR - [ERROR] neo4j-kg-us-national-04032024-b00a53c3 failed to become ready within 300 seconds
+2025-07-16 16:51:10,738 - cross_platform_docker_manager - ERROR - Docker instance failed to become ready
