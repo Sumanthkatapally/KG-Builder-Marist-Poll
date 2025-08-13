@@ -353,11 +353,12 @@ class SurveyKGBuilder:
                 
                 if original_field:
                     # Get the full question description
-                    full_description = self.ontology.get_field_description(original_field)
-                    text_parts.append(f"{field} ({full_description}): {value_str}")
+                    #full_description = self.ontology.get_field_description(original_field)
+                    #text_parts.append(f"{field} ({full_description}): {value_str}")
+                    text_parts.append(f"{field}: {value_str},")
                 else:
                     # Fallback to just the descriptive field name
-                    text_parts.append(f"{field}: {value_str}")
+                    text_parts.append(f"{field}: {value_str},")
         
         return " ".join(text_parts)
     
